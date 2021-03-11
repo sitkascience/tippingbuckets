@@ -2,7 +2,7 @@ from soil_moisture_funcs import *
 from plot_funcs import *
 import matplotlib.pyplot as plt
 
-dat = read_sm_data('/Users/CoraJune/Documents/GitHub/sitkaPrecip/data/station_data_09092020/VER2/test40.csv', '2020-08-10 00:00:0000', '2020-08-17 00:00:0000')
+dat = read_sm_data('/Users/CoraJune/Documents/GitHub/sitkaPrecip/test40.csv', '2020-08-10 00:00:0000', '2020-08-17 00:00:0000')
 
 dat['tAM_conv'] = pd.DataFrame(convert_analog_sm(dat.tAM))
 dat['tBM_conv'] = pd.DataFrame(convert_analog_sm(dat.tBM))
